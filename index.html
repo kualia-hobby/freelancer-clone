@@ -68,7 +68,7 @@
       <div class="row">
         
         <div class="col-lg-4 col-md-6 mx-auto mb-5">
-          <div class="portfolio-item">
+          <div class="portfolio-item" targetModal="#item1">
             <div class="hover-effect bg-primary">
               <i class="fa fa-plus fa-3x txt-white"></i>
             </div>
@@ -77,7 +77,7 @@
         </div>
         
         <div class="col-lg-4 col-md-6 mx-auto mb-5">
-          <div class="portfolio-item">
+          <div class="portfolio-item" targetModal="#item2">
             <div class="hover-effect bg-primary">
               <i class="fa fa-plus fa-3x txt-white"></i>
             </div>
@@ -86,7 +86,7 @@
         </div>
         
         <div class="col-lg-4 col-md-6 mx-auto mb-5">
-          <div class="portfolio-item">
+          <div class="portfolio-item" targetModal="#item3">
             <div class="hover-effect bg-primary">
               <i class="fa fa-plus fa-3x txt-white"></i>
             </div>
@@ -95,7 +95,7 @@
         </div>
         
         <div class="col-lg-4 col-md-6 mx-auto mb-5 mb-lg-0">
-          <div class="portfolio-item">
+          <div class="portfolio-item" targetModal="#item4">
             <div class="hover-effect bg-primary">
               <i class="fa fa-plus fa-3x txt-white"></i>
             </div>
@@ -104,7 +104,7 @@
         </div>
         
         <div class="col-lg-4 col-md-6 mx-auto mb-5 mb-md-0">
-          <div class="portfolio-item">
+          <div class="portfolio-item" targetModal="#item5">
             <div class="hover-effect bg-primary">
               <i class="fa fa-plus fa-3x txt-white"></i>
             </div>
@@ -113,7 +113,7 @@
         </div>
         
         <div class="col-lg-4 col-md-6 mx-auto">
-          <div class="portfolio-item">
+          <div class="portfolio-item" targetModal="#item6">
             <div class="hover-effect bg-primary">
               <i class="fa fa-plus fa-3x txt-white"></i>
             </div>
@@ -227,45 +227,228 @@
     <div class="container"><small>Copyright © Your Website 2022</small></div>
   </div>
 
-<!-- 
-  <div class="portfolio-item-expanded show" id="item1">
-    <div class="dialog">
-      <div class="content">
-        <div class="content-header">
-          <i class="fa fa-close"></i>
+
+  <div class="modal" id="item1">
+
+    <div class="content modal-xl">
+
+      <div class="content-header ms-auto" style="width: fit-content">
+        <div class="btn btn-close" id="close-modal">
+          <i class="fa fa-close fa-3x"></i>
         </div>
-        <div class="content-body text-center pb-5">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <h2 class="heading text-uppercase">Log Cabin</h2>
-                <div class="custom-divider">
-                  <div class="custom-divider-line"></div>
-                  <i class="fa fa-star"></i>
-                  <div class="custom-divider-line"></div>
-                </div>
-                
-                <img class="img-fluid mb-5" src="./images/cabin.png" alt="*">
-                <p class="mb-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-                </p>
-                <button class="btn btn-primary">
-                  <i class="fa fa-close"></i>
-                  Close Window
-                </button>
+      </div>
+
+      <div class="content-body text-center pb-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h2 class="heading text-uppercase">Log Cabin</h2>
+              <div class="custom-divider">
+                <div class="custom-divider-line"></div>
+                <i class="fa fa-star"></i>
+                <div class="custom-divider-line"></div>
               </div>
+              
+              <img class="img-fluid rounded mb-5" src="./images/cabin.png" alt="*">
+              <p class="mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+              </p>
+              <button class="btn btn-primary" id="close-modal">
+                <i class="fa fa-close"></i>
+                Close Window
+              </button>
             </div>
           </div>
         </div>
       </div>
+
     </div>
   </div>
-  <div class="portfolio-item-expanded" id="item2"></div>
-  <div class="portfolio-item-expanded" id="item3"></div>
-  <div class="portfolio-item-expanded" id="item4"></div>
-  <div class="portfolio-item-expanded" id="item5"></div>
-  <div class="portfolio-item-expanded" id="item6"></div>
--->
+
+  <div class="modal" id="item2">
+
+    <div class="content modal-xl">
+
+      <div class="content-header ms-auto" style="width: fit-content">
+        <div class="btn btn-close" id="close-modal">
+          <i class="fa fa-close fa-3x"></i>
+        </div>
+      </div>
+
+      <div class="content-body text-center pb-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h2 class="heading text-uppercase">Tasty Cake</h2>
+              <div class="custom-divider">
+                <div class="custom-divider-line"></div>
+                <i class="fa fa-star"></i>
+                <div class="custom-divider-line"></div>
+              </div>
+              
+              <img class="img-fluid rounded mb-5" src="./images/cake.png" alt="*">
+              <p class="mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+              </p>
+              <button class="btn btn-primary" id="close-modal">
+                <i class="fa fa-close"></i>
+                Close Window
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal" id="item3">
+
+    <div class="content modal-xl">
+
+      <div class="content-header ms-auto" style="width: fit-content">
+        <div class="btn btn-close" id="close-modal">
+          <i class="fa fa-close fa-3x"></i>
+        </div>
+      </div>
+
+      <div class="content-body text-center pb-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h2 class="heading text-uppercase">Circus Tent</h2>
+              <div class="custom-divider">
+                <div class="custom-divider-line"></div>
+                <i class="fa fa-star"></i>
+                <div class="custom-divider-line"></div>
+              </div>
+              
+              <img class="img-fluid rounded mb-5" src="./images/circus.png" alt="*">
+              <p class="mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+              </p>
+              <button class="btn btn-primary" id="close-modal">
+                <i class="fa fa-close"></i>
+                Close Window
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal" id="item4">
+
+    <div class="content modal-xl">
+
+      <div class="content-header ms-auto" style="width: fit-content">
+        <div class="btn btn-close" id="close-modal">
+          <i class="fa fa-close fa-3x"></i>
+        </div>
+      </div>
+
+      <div class="content-body text-center pb-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h2 class="heading text-uppercase">Log Cabin</h2>
+              <div class="custom-divider">
+                <div class="custom-divider-line"></div>
+                <i class="fa fa-star"></i>
+                <div class="custom-divider-line"></div>
+              </div>
+              
+              <img class="img-fluid rounded mb-5" src="./images/cabin.png" alt="*">
+              <p class="mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+              </p>
+              <button class="btn btn-primary" id="close-modal">
+                <i class="fa fa-close"></i>
+                Close Window
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal" id="item5">
+
+    <div class="content modal-xl">
+
+      <div class="content-header ms-auto" style="width: fit-content">
+        <div class="btn btn-close" id="close-modal">
+          <i class="fa fa-close fa-3x"></i>
+        </div>
+      </div>
+
+      <div class="content-body text-center pb-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h2 class="heading text-uppercase">Log Cabin</h2>
+              <div class="custom-divider">
+                <div class="custom-divider-line"></div>
+                <i class="fa fa-star"></i>
+                <div class="custom-divider-line"></div>
+              </div>
+              
+              <img class="img-fluid rounded mb-5" src="./images/cabin.png" alt="*">
+              <p class="mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+              </p>
+              <button class="btn btn-primary" id="close-modal">
+                <i class="fa fa-close"></i>
+                Close Window
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal" id="item6">
+
+    <div class="content modal-xl">
+
+      <div class="content-header ms-auto" style="width: fit-content">
+        <div class="btn btn-close" id="close-modal">
+          <i class="fa fa-close fa-3x"></i>
+        </div>
+      </div>
+
+      <div class="content-body text-center pb-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h2 class="heading text-uppercase">Log Cabin</h2>
+              <div class="custom-divider">
+                <div class="custom-divider-line"></div>
+                <i class="fa fa-star"></i>
+                <div class="custom-divider-line"></div>
+              </div>
+              
+              <img class="img-fluid rounded mb-5" src="./images/cabin.png" alt="*">
+              <p class="mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+              </p>
+              <button class="btn btn-primary" id="close-modal">
+                <i class="fa fa-close"></i>
+                Close Window
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
   <script src="./main.js"></script>
 </body>

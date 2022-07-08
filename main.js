@@ -58,11 +58,20 @@ const onClick = (e) => {
     
     scrollTo(href)
     e.preventDefault();
-
+    return
+  }
+  
+  var targetModal = clickedOn.getAttribute("targetModal")
+  if(targetModal){
+    document.querySelector(targetModal).classList.add("show");
+    return
   }
 
-
-
+  if(clickedOn.id == "close-modal" || clickedOn.getAttribute("class") == "modal show"){
+    let active_modal = document.querySelector(".modal.show");
+    active_modal.classList.remove("show");
+    return
+  }
 
 }
 

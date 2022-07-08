@@ -177,6 +177,10 @@ header .heading{
   font-size: 2.25rem;
 }
 
+.modal .heading{
+  font-size: 3rem;
+}
+
 @media screen and (min-width: 992px) {
   .section .heading{
     font-size: 3rem;
@@ -254,6 +258,10 @@ footer{
   margin: auto;
 }
 
+.portfolio-item > *{
+  pointer-events: none;
+}
+
 .lead{
   font-size: 1.25rem;
   font-weight: 400;
@@ -322,7 +330,7 @@ label{
   height: auto;
 }
 
-.portfolio-item-expanded{
+.portfolio-item-modal{
   position: fixed;
   display: none;
   top: 0;
@@ -334,10 +342,44 @@ label{
   overflow-x: hidden;
   outline: 0;
 
+
   transition: opacity 0.15s linear;
 
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  justify-content: center;
+  overflow: auto; /* Enable scroll if needed */
+  color: var(--secondary-text);
+  
+  
+  opacity: 0;
+  top: -1rem;
+  transition: all 0.15s ease-in-out;
+
+  background-color: #000000; /* Fallback color */
+  background-color: #00000080; /* Black w/ opacity */
+}
+
 .show{
-  display: block;
+  display: flex;
+  opacity: 100%;
+  top: 0;
+}
+
+.modal .content {
+  background-color: white;
+  border-radius: 1rem;
+  width: fit-content;
+  height: fit-content;
+  box-shadow: 0 0 0.2rem;
+
+  margin: 1.75rem auto;
+
 }
